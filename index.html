@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lee | Java Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="#home" class="logo"><span>Your</span>Name</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        ☰
+      </button>
+
+      <nav id="navMenu">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#resume">Resume</a>
+      </nav>
+
+      <button
+        class="theme-toggle"
+        id="themeToggle"
+        aria-label="Toggle dark mode"
+      >
+        ☾
+      </button>
+      <a class="connect-btn" href="#contact">Let's Connect</a>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-content reveal">
+          <p class="intro">Hello, I'm <span class="wave">✦</span></p>
+          <h1>REDDIVARI<br />LEELA PRASAD</h1>
+          <h2>
+            Java Full Stack Developer <span class="typing-cursor">|</span>
+          </h2>
+
+          <p class="description">
+            I’m an MCA student and aspiring Java Full Stack Developer passionate
+            about building modern, responsive, and user-friendly web
+            applications. I’m learning Java, Spring Boot, HTML, CSS, JavaScript,
+            and MySQL to turn ideas into practical solutions. I enjoy solving
+            problems, exploring new technologies, and building projects that
+            create real-world value.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary"
+              >View My Work <span>→</span></a
+            >
+            <a href="resume.pdf" class="btn secondary" download
+              >⇩ Download Resume</a
+            >
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="blob"></div>
+
+          <div class="profile-frame">
+            <img
+              src="images/leee.png"
+              alt="My profile photo"
+              onerror="
+                this.style.display = 'none';
+                document.getElementById('photoFallback').style.display = 'flex';
+              "
+            />
+            <div id="photoFallback" class="photo-fallback">
+              <span>👨🏻‍💻</span>
+              <p>Add your photo</p>
+              <small>images/profile.jpg</small>
+            </div>
+          </div>
+
+          <div class="tech-float java">☕<span>Java</span></div>
+          <div class="tech-float spring">🌱<span>Spring</span></div>
+          <div class="tech-float js">JS</div>
+          <div class="tech-float html">5<span>HTML</span></div>
+          <div class="tech-float database">▤<span>MySQL</span></div>
+
+          <div class="hand-note">Turning ideas into<br />real projects ↙</div>
+          <div class="decor-dot dot-one"></div>
+          <div class="decor-dot dot-two"></div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="about-content reveal">
+          <p class="section-label">About Me</p>
+          <h2>Get to Know <span class="blue">Me</span></h2>
+          <p class="description">
+            I'm an MCA student and aspiring Java Full Stack Developer. I enjoy
+            learning new technologies, solving problems and building practical
+            projects that make a difference.
+          </p>
+
+          <div class="about-facts">
+            <div>
+              <span class="fact-icon">🎓</span>
+              <p><b>Education</b><br />MCA Student</p>
+            </div>
+            <div>
+              <span class="fact-icon">📍</span>
+              <p><b>Location</b><br />Sri kalahasi,Andhra Pradesh, India</p>
+            </div>
+            <div>
+              <span class="fact-icon">💙</span>
+              <p><b>Interests</b><br />Coding & Learning</p>
+            </div>
+          </div>
+
+          <a href="#skills" class="btn primary">More About Me →</a>
+        </div>
+
+        <div class="about-card reveal">
+          <div class="about-avatar">👨🏻‍💻</div>
+          <div class="stats-card">
+            <div><strong>Always</strong><span>Learning new skills</span></div>
+            <div><strong>Java</strong><span>Backend development</span></div>
+            <div>
+              <strong>Growing</strong><span>One project at a time</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <p class="section-label">My Skills</p>
+        <h2>Technologies I <span class="blue">Work With</span></h2>
+        <p class="description">
+          Technologies and tools I'm learning and using.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal"><span>☕</span><b>Java</b></div>
+          <div class="skill-card reveal"><span>🌱</span><b>Spring Boot</b></div>
+          <div class="skill-card reveal"><span>🟠</span><b>HTML5</b></div>
+          <div class="skill-card reveal"><span>🔵</span><b>CSS3</b></div>
+          <div class="skill-card reveal"><span>🟨</span><b>JavaScript</b></div>
+          <div class="skill-card reveal"><span>🗄️</span><b>MySQL</b></div>
+          <div class="skill-card reveal"><span>🔀</span><b>Git</b></div>
+          <div class="skill-card reveal"><span>🐙</span><b>GitHub</b></div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <p class="section-label">My Projects</p>
+        <h2>Featured <span class="blue">Projects</span></h2>
+        <p class="description">Some projects I'm building and learning from.</p>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-image crop-image">🌾</div>
+            <div class="project-info">
+              <h3>Village Crop Connect</h3>
+              <p>
+                A platform concept to connect local shops, farmers and
+                customers.
+              </p>
+              <div class="tags">
+                <span>Java</span><span>MySQL</span><span>HTML/CSS</span>
+              </div>
+              <a href="https://github.com/" target="_blank" rel="noopener"
+                >GitHub →</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image ecommerce-image">🛒</div>
+            <div class="project-info">
+              <h3>E-Commerce Website</h3>
+              <p>
+                A practice project for product listings and online shopping.
+              </p>
+              <div class="tags">
+                <span>Java</span><span>JavaScript</span><span>SQL</span>
+              </div>
+              <a href="https://github.com/" target="_blank" rel="noopener"
+                >GitHub →</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image student-image">🎓</div>
+            <div class="project-info">
+              <h3>Student Management</h3>
+              <p>A practice application for managing student information.</p>
+              <div class="tags">
+                <span>Java</span><span>JDBC</span><span>MySQL</span>
+              </div>
+              <a href="https://github.com/" target="_blank" rel="noopener"
+                >GitHub →</a
+              >
+            </div>
+          </article>
+        </div>
+        <p class="project-note">
+          <strong>Life is the continue process of solving tha problems</strong>
+        </p>
+      </section>
+
+      <section class="section resume" id="resume">
+        <div class="resume-content reveal">
+          <p class="section-label">Resume</p>
+          <h2>Let's Work <span class="blue">Together</span></h2>
+          <p class="description">
+            I'm focused on learning, building useful projects and exploring
+            opportunities to grow as a developer.
+          </p>
+          <div class="hero-buttons">
+            <a href="resume.pdf" class="btn primary" download
+              >⇩ Download Resume</a
+            >
+            <br />
+          </div>
+        </div>
+        <div class="contact-list reveal" id="contact">
+          <button type="button" class="btn secondary" disabled>
+            ✉ Contact Me
+          </button>
+          <div class="social-links">
+            <a
+              href="https://github.com/just-lee"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+              class="social-icon"
+            >
+              <img src="images/gh.png" alt="GitHub"
+            /></a>
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+              c
+              ><img src="images/lin.png" alt="GitHub"
+            /></a>
+            <a
+              href="mailto:reddivarileelaprasad86@gmail.com"
+              aria-label="Email"
+              class="social-icon"
+              ><img src="images/Mail.png" alt="GitHub"
+            /></a>
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+              class="social-icon"
+              ><img src="images/inst.png" alt="GitHub"
+            /></a>
+            <!--<a
+              href="javascript:void(0)"
+              class="social-icon phone-icon"
+              aria-label="Phone number"
+              title="8688486023"
+            >
+              📞
+            </a>-->
+          </div>
+          <p>
+            ✉ <span><b>Email</b><br />reddivarileelaprasad86@gmail.com</span>
+          </p>
+          <p>
+            📍
+            <span
+              ><b>Location</b><br />Sri kalahasti,Andhra Pradesh, India</span
+            >
+          </p>
+          <p>
+            in <span><b>LinkedIn</b><br />linkedin.com/in/yourname</span>
+          </p>
+          <p>
+            GH <span><b>GitHub</b><br />https://github.com/just-lee</span>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        © <span id="year"></span> leela prasad. Built with HTML, CSS &
+        JavaScript.
+      </p>
+      <a href="#home">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
